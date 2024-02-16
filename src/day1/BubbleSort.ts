@@ -14,3 +14,4 @@ export default function bubble_sort(arr: number[]): void {
 }
 
 //if there was no swap in the last iteration, the array is sorted
+//Time complexity: O(n^2)
