@@ -17,8 +17,7 @@ export default class Queue<T> {
         const node = {value: item} as Node<T>;
         this.length++;
         if(!this.tail) {
-            this.head = node;
-            this.tail = node;
+            this.head = this.tail = node;
             return;
         }
         
@@ -40,6 +39,5 @@ export default class Queue<T> {
     }
     peek(): T | undefined {
         return this.head?.value;
-
     }
 }
